@@ -108,7 +108,7 @@ jobs:
         run: npx turbo test:unit --filter="...[HEAD^]" --team="${{ secrets.TURBO_TEAM }}" --token="${{ secrets.TURBO_TEAM }}" -- --ci --coverage
 
       - name: Jest Coverage Comment
-        uses: MishaKav/jest-coverage-comment@41b5ca01d1250de84537448d248b8d18152cb277
+        uses: MishaKav/jest-coverage-comment@434e6d2d37116d23d812809b61d499639842fa3b
         with:
           title: 'Unit Test Coverage Report'
           junitxml-path: ./junit.xml
